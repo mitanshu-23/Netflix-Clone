@@ -1,0 +1,66 @@
+.navbar{
+    font-size:24px;
+    position: fixed;
+    top:0;
+    z-index: 999;
+    width: 100%;
+    background: linear-gradient(to top, transparent 0%, rgba(0, 0, 0, 0.3) 50%);
+    padding: 5px;
+
+    &.scrolled{
+        background-color: var(--main-color);
+    }
+
+.container{
+    padding: 0 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .left{
+        display: flex;
+        align-items: center;
+    img{
+        height: 50px;
+        margin-right: 40px;
+    }
+
+    span{
+        margin-right: 14px;
+        cursor: pointer;
+        box-shadow: 1px 0px 0px rgb(226, 129, 129);
+        padding: 0 3px 0 0;
+    }
+}
+
+    .right{
+        display: flex;
+        .icons{
+            margin: 0 15px 0 15px;
+            cursor: pointer;
+        }
+        .profile{
+
+        .options{
+            display: none;
+
+            background-color: var(--main-color);
+            border-radius: 5px;
+
+        }
+        span{
+            padding: 10px;
+            cursor: pointer;
+        }
+        &:hover{
+            .options{
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+            }
+        }
+    }
+    }
+}
+
+}
