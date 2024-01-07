@@ -21,8 +21,8 @@ const Navbar = () => {
        <div className='left'>
         <img src="c8c8077a-10fc-44d5-93f0-da4e592a299e-netflix-logo-print_pms-removebg-preview.png" alt=""/>
         <Link to='/'  className="link"><span>Home</span></Link>
-        <Link to='/series' className="link"><span>Series</span></Link>
-        <Link to='/movies' className="link"><span>Movies</span></Link>
+        <Link to='/series' className="link"><span className='navbarMainLinks'>Series</span></Link>
+        <Link to='/movies' className="link"><span className='navbarMainLinks'>Movies</span></Link>
         <span>New and Popular</span>
         <span>My List</span>
        </div>

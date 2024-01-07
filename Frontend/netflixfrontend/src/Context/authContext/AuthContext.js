@@ -28,8 +28,8 @@ useEffect(()=>{
 },[state.user]);
 
 useEffect(()=>{
-    const decodedToken = localStorage.getItem('user').accessToken ? jwtDecode(JSON.parse(localStorage.getItem('user')).accessToken) : null;
-    
+    const decodedToken = JSON.parse(localStorage.getItem('user')).accessToken ? jwtDecode(JSON.parse(localStorage.getItem('user')).accessToken) : null;
+    console.log(decodedToken);
     if(decodedToken) {
     if (decodedToken.exp < (Date.now() / 1000)) {
         localStorage.removeItem('user');

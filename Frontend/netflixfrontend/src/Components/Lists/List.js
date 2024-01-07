@@ -7,6 +7,7 @@ function List(props) {
     const listRef=useRef();
     const[slides,setSlides]=useState(0);
     const[ismoved,setIsmoved]=useState(false);
+    const[clickLimit, setClickLimit] = useState(window.innerWidth / 230);
     const list=props.newlist
 
     const handleClick = (dir) =>{
